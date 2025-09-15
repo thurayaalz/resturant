@@ -1,0 +1,101 @@
+html {
+  font-family: "Great Vibes";
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(240, 240, 240, 0.707);
+}
+header {
+  background-color: rgb(239, 239, 239);
+  width: 100vw;
+  height: 30px;
+}
+nav {
+    font-size: 2rem;
+    justify-content: left;
+    justify-items: left;
+    align-items: left;
+    align-content: left;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+nav button {
+    font-family: inherit;
+    color: brown;
+  background-color: transparent;
+  border: none;
+}
+
+nav button:hover {
+  color: rgba(238, 28, 28, 0.867);
+}
+.card {
+  padding: 5px;
+  transition: 3ms;
+  backdrop-filter: blur(10px);
+  margin: 0px 10px 20px 0px;
+  border: white 1px solid;
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(255, 255, 255, 0.282),
+    rgba(220, 121, 50, 0.42),
+    rgba(32, 19, 9, 0.016),
+    transparent
+  );
+  color: black;
+  border-radius: 10px;
+  min-width: 170px;
+  max-width: 560px;
+  min-height: 400px;
+  max-height: 300px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgb(255, 255, 255);
+}
+.card:hover {
+  color: white;
+  cursor: pointer;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.282),
+    rgba(220, 121, 50, 0.42),
+    rgba(32, 19, 9, 0.016)
+  );
+  transition: ease-in-out 0.6s;
+}
+.card img {
+  margin-right: 15px;
+  display: flex;
+  align-self: right;
+  justify-self: right;
+  max-height: 400px;
+}
+.card h3 {
+    margin: 10px;
+  font-family: "Great Vibes";
+  align-self: center;
+  font-size: 3rem;
+  color: rgb(61, 20, 4);
+}
+.card h3:hover {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.card h5 {
+    
+    margin: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.backimg {
+  width: 100vh;
+  rotate: 90deg;
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  left: 150px;
+}
+.cardHolder {
+columns: 250px;
+gap: 10px;
+}
