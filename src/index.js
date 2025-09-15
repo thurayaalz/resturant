@@ -1,5 +1,5 @@
-import "./cards.js";
 import "./style.css";
+import "./cards.js";
 
 const homeBtn = document.querySelector(".homeBtn").addEventListener("click" , ()=>{
 //got to home page
