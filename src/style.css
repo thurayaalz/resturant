@@ -6,30 +6,34 @@ html {
   background-color: rgba(240, 240, 240, 0.707);
 }
 header {
+  padding: 5px;
   background-color: rgb(239, 239, 239);
   width: 100vw;
   height: 30px;
+  margin-bottom: 30px;
 }
 nav {
-    font-size: 2rem;
-    justify-content: left;
-    justify-items: left;
-    align-items: left;
-    align-content: left;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+  font-size: 2rem;
+  justify-content: left;
+  justify-items: left;
+  align-items: left;
+  align-content: left;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
 }
 
 nav button {
-    font-family: inherit;
-    color: brown;
+  font-family: inherit;
+  color: brown;
   background-color: transparent;
   border: none;
 }
 
 nav button:hover {
+  cursor: pointer;
   color: rgba(238, 28, 28, 0.867);
 }
+
 .card {
   padding: 5px;
   transition: 3ms;
@@ -71,7 +75,7 @@ nav button:hover {
   max-height: 400px;
 }
 .card h3 {
-    margin: 10px;
+  margin: 10px;
   font-family: "Great Vibes";
   align-self: center;
   font-size: 3rem;
@@ -82,8 +86,7 @@ nav button:hover {
   transition: 0.4s ease-in-out;
 }
 .card h5 {
-    
-    margin: 10px;
+  margin: 10px;
   color: rgb(0, 0, 0);
 }
 
@@ -96,6 +99,24 @@ nav button:hover {
   left: 150px;
 }
 .cardHolder {
-columns: 250px;
-gap: 10px;
+  overflow: scroll;
+  columns: 300px;
+  gap: 10px;
+}
+
+#content {
+  padding-left: 15px;
+}
+
+.cardHolder::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cardHolder::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cardHolder::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
 }

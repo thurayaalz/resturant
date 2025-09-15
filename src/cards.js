@@ -2,6 +2,9 @@ import shrimp from "./shrimp1.png";
 import fish from "./fish1.png";
 import sides from "./sides.png";
 
+export function home(){
+
+
 //fish
 const fishDish = document.createElement("div");
 fishDish.classList = "card";
@@ -41,3 +44,4 @@ const backG = document.createElement("img");
 backG.src = shrimp;
 backG.classList = "backimg";
 contentErea.appendChild(backG);
+}
