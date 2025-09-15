@@ -1,10 +1,10 @@
 import shrimp from "./shrimp1.png";
 import fish from "./fish1.png";
 import sides from "./sides.png";
+import { clean } from "./index.js";
 
 export function home(){
-
-
+clean();
 //fish
 const fishDish = document.createElement("div");
 fishDish.classList = "card";
@@ -39,9 +39,6 @@ cardHolder.append(shrimpDish, fishDish, sidesDish);
 const contentErea = document.querySelector("#content");
 contentErea.appendChild(cardHolder);
 
-//background
-const backG = document.createElement("img");
-backG.src = shrimp;
-backG.classList = "backimg";
-contentErea.appendChild(backG);
+    //background
+
 }
