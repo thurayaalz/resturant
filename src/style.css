@@ -99,13 +99,43 @@ nav button:hover {
   top: 0px;
   z-index: -10;
   left: 150px;
+  overflow: hidden;
 }
 .cardHolder {
   overflow: scroll;
   columns: 300px;
   gap: 10px;
 }
-
+#ABT{
+  text-align: justify;
+  box-shadow: 0 10px 10px white;
+  grid-template-rows: 1fr;
+  display: grid;
+  grid-template-columns: 2fr , 1fr;
+  width: 90vw;
+  padding: 15px;
+  border-radius: 10px;
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(255, 255, 255, 0.282),
+    rgba(220, 121, 50, 0.42),
+    rgba(32, 19, 9, 0.016),
+    transparent
+  );
+  backdrop-filter: blur(15px);
+}
+#ABT h3{
+  color: brown;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+#ABT img {
+  margin: 0px;
+  position: relative;
+  right: -9px;
+  width: 300px;
+  grid-area: 1 / 2 / 2 / 3; 
+}
 #content {
   padding-left: 15px;
 }
@@ -123,6 +153,20 @@ nav button:hover {
   border-radius: 4px;
 }
 
-.backimg{
-    width: 900px;
+
+footer{
+  border-bottom:  rgba(220, 121, 50, 0.82) 3px solid;
+  color: rgb(71, 71, 71);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.378);
+  backdrop-filter: blur(10px);
+  height: 100px;
+  width: 99vw;
+  position: absolute;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns:  1fr, 1fr ,1fr;
+}
+footer div{
+  grid-area: 1/2/2/3;
 }
