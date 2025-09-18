@@ -5,6 +5,7 @@ import { aboutP } from "./about.js";
 import { home } from "./cards.js";
 
 home();
+
 const backG = document.createElement("img");
 backG.src = shrimp;
 backG.classList = "backimg";
